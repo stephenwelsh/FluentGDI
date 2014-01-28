@@ -3,6 +3,7 @@ FluentGDI
 
 When you still need to use Old School GDI+ no reason you can't make it easier using a bit of Fluent code,
 
+```csharp
 FluentGDIProfile _topbarProfile = new FluentGDIProfile() {
   FillBrush = new SolidBrush(Color.Black),
   TextBrush = new SolidBrush(Color.White),
@@ -29,3 +30,4 @@ using (FluentGDI gdi = new FluentGDI(Graphics.FromImage(image))) {
     .Text("Second Line");
 }
 image.Save("GDI_Rendered.png", ImageFormat.Png);
+```
